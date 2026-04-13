@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class FearTrigger : MonoBehaviour
 {
+
+    public AudioSource inRangeAudio;
     [SerializeField] private bool playOnlyOnce = false;
     [SerializeField] private float repeatDelay = 1.0f;
 
@@ -24,8 +26,14 @@ public class FearTrigger : MonoBehaviour
         if (fearParticles != null)
         {
             fearParticles.PlayFearEffect();
-            hasPlayed = true;
-            lastPlayTime = Time.time;
         }
+
+        if (inRangeAudio != null)
+        {
+            inRangeAudio.Play();
+        }
+
+        hasPlayed = true;
+        lastPlayTime = Time.time;
     }
 }
