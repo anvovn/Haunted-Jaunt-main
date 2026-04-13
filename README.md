@@ -2,6 +2,8 @@
 
 Team Members: An Vo, Gabriel Sotelo-Silva, Nate Wong, Andrew Martin
 
+An Vo Sound Effect: I implemented a sound effect to the prefab of all ghost/gargoyle enemy characters. It was an add on to Andrew's implementation of the sphere collider and scripts, which played a "Vine boom" sound effect whenever the player model gets in range of each enemy. I imported the audio track to the audio folder in UnityTechnologies/3DBeginnerTutorialComplete, and within the Audio part of the MainScene hierarchy, the audio source was created to then be inserted into the Fear Trigger script of all the enemies.
+
 Andrew Martin Particle Effects: 
 I attached a particle effect to the prefab of the player character. I put a sphere collider around 
 the ghost and gargoyle prefabs and then wrote a script so that when the play got within the range
