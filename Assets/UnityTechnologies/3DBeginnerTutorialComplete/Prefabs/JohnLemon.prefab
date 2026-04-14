@@ -990,6 +990,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turnSpeed: 20
+  dashSpeed: 7
 --- !u!82 &355967702596757054
 AudioSource:
   m_ObjectHideFlags: 0
