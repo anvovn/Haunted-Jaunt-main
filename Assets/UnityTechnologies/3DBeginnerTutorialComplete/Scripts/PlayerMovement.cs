@@ -6,7 +6,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float turnSpeed = 20f;
-    [SerializeField] float dashSpeed = 1f;
+    [SerializeField] private float dashSpeed = 1f;
     private float speedMultiplier;
 
     Animator m_Animator;
@@ -81,6 +81,6 @@ public class PlayerMovement : MonoBehaviour
 
         speedMultiplier = 1f;
         isDashing = false;
-        
+
     }
 }
